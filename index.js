@@ -28,7 +28,15 @@ Btn1.addEventListener("click", () => {
 });
 
 Btn2.addEventListener("click", () => {
-  let arr = ["rectangle", "square", "circle", "triangle-up", "triangle-right"];
+  let arr = [
+    "rectangle",
+    "square",
+    "circle",
+    "triangle-up",
+    "triangle-right",
+    "diamond-shield",
+    "heart",
+  ];
   let randomIndex = Math.floor(Math.random() * arr.length);
   shape.classList.remove(...arr);
   shape.classList.add(arr[randomIndex]);

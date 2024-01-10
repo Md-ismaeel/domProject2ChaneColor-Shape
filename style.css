@@ -52,28 +52,67 @@ body {
 }
 
 .circle {
-    width: 70px;
-    height: 70px;
-    background: black;
-    border-radius: 50%
-  }
+  width: 70px;
+  height: 70px;
+  background: black;
+  border-radius: 50%;
+}
 
-  
-  .triangle-up {
-    width: 0;
-    height: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-bottom: 70px solid blue;
-  }
+.triangle-up {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 70px solid blue;
+}
 
-  
-  .triangle-right {
-    width: 0;
-    height: 0;
-    border-top: 50px solid transparent;
-    border-left: 70px solid violet;
-    border-bottom: 50px solid transparent;
-  }
+.triangle-right {
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-left: 70px solid violet;
+  border-bottom: 50px solid transparent;
+}
 
+.diamond-shield {
+  width: 0;
+  height: 0;
+  border: 50px solid transparent;
+  border-bottom: 20px solid red;
+  position: relative;
+  top: -50px;
+}
+.diamond-shield:after {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 20px;
+  width: 0;
+  height: 0;
+  border: 50px solid transparent;
+  border-top: 70px solid red;
+}
 
+.heart {
+  position: relative;
+  width: 100px;
+  height: 90px;
+}
+.heart:before,
+.heart:after {
+  position: absolute;
+  content: "";
+  left: 50px;
+  top: 0;
+  width: 50px;
+  height: 80px;
+  background: red;
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+.heart:after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
