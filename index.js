@@ -40,4 +40,5 @@ Btn2.addEventListener("click", () => {
   let randomIndex = Math.floor(Math.random() * arr.length);
   shape.classList.remove(...arr);
   shape.classList.add(arr[randomIndex]);
+  shape.classList.add(arr[randomIndex]).style.transform = "rotate(360deg)";
 });
