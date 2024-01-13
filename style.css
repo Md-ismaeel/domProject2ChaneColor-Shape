@@ -12,7 +12,7 @@ body {
   align-items: center;
   flex-direction: column;
   gap: 20px;
-  background-color: green;
+  background: linear-gradient(45deg, yellow, transparent);
 }
 
 .box {
@@ -77,25 +77,6 @@ body {
   border-bottom: 50px solid transparent;
 }
 
-.diamond-shield {
-  width: 0;
-  height: 0;
-  border: 50px solid transparent;
-  border-bottom: 20px solid red;
-  position: relative;
-  top: -50px;
-}
-.diamond-shield:after {
-  content: "";
-  position: absolute;
-  left: -50px;
-  top: 40px;
-  width: 0;
-  height: 0;
-  border: 50px solid transparent;
-  border-top: 70px solid red;
-}
-
 .heart {
   position: relative;
   width: 100px;
@@ -123,8 +104,86 @@ body {
   transform-origin: 100% 100%;
 }
 
+.star-six {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 90px solid red;
+  position: relative;
+}
+.star-six:after {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 80px solid red;
+  position: absolute;
+  content: "";
+  top: 30px;
+  left: -50px;
+}
 
-#abc{
+.trapezoid {
+  border-bottom: 100px solid red;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  height: 0;
+  width: 100px;
+}
+
+
+.pacman {
+  width: 0px;
+  height: 0px;
+  border-right: 60px solid transparent;
+  border-top: 60px solid red;
+  border-left: 60px solid red;
+  border-bottom: 60px solid red;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+}
+
+
+.yin-yang {
+  width: 70px;
+  box-sizing: content-box;
+  height: 48px;
+  background: #eee;
+  border-color: red;
+  border-style: solid;
+  border-width: 2px 2px 27px 2px;
+  border-radius: 100%;
+  position: relative;
+}
+.yin-yang:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background: #eee;
+  border: 12px solid red;
+  border-radius: 100%;
+  width: 8px;
+  height: 8px;
+  box-sizing: content-box;
+}
+.yin-yang:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: red;
+  border: 12px solid #eee;
+  border-radius: 100%;
+  width: 8px;
+  height: 8px;
+  box-sizing: content-box;
+}
+
+#abc {
   width: 90px;
   height: 90px;
   display: flex;
@@ -132,18 +191,19 @@ body {
   align-items: center;
   animation-name: shapeChange;
   animation-duration: 2.5s;
-  animation-iteration-count: infinite; 
-
+  animation-iteration-count: infinite;
 }
 
 @keyframes shapeChange {
-  0%{
-    transform:scale(1);
-    opacity: .5;
+  0% {
+    transform: scale(1);
+    opacity: 0.5;
+    transform: rotate(0deg);
   }
-  
-  100%{
+
+  100% {
     opacity: 1;
-    transform:scale(0.5);
+    transform: scale(0.5);
+    transform: rotate(360deg);
   }
 }

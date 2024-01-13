@@ -34,11 +34,14 @@ Btn2.addEventListener("click", () => {
     "circle",
     "triangle-up",
     "triangle-right",
-    "diamond-shield",
     "heart",
+    "star-six",
+    "trapezoid",
+    "pacman",
+    "yin-yang"
   ];
+
   let randomIndex = Math.floor(Math.random() * arr.length);
   shape.classList.remove(...arr);
   shape.classList.add(arr[randomIndex]);
-  shape.classList.add(arr[randomIndex]).style.transform = "rotate(360deg)";
 });
