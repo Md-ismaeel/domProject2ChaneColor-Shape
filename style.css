@@ -51,13 +51,13 @@ body {
 .square {
   width: 75px;
   height: 70px;
-  background: white;
+  background: green;
 }
 
 .circle {
   width: 85px;
   height: 85px;
-  background: black;
+  background: pink;
   border-radius: 50%;
 }
 
@@ -109,7 +109,7 @@ body {
   height: 0;
   border-left: 50px solid transparent;
   border-right: 50px solid transparent;
-  border-bottom: 90px solid red;
+  border-bottom: 90px solid aqua;
   position: relative;
 }
 .star-six:after {
@@ -117,7 +117,7 @@ body {
   height: 0;
   border-left: 50px solid transparent;
   border-right: 50px solid transparent;
-  border-top: 80px solid red;
+  border-top: 80px solid aqua;
   position: absolute;
   content: "";
   top: 30px;
@@ -125,7 +125,7 @@ body {
 }
 
 .trapezoid {
-  border-bottom: 100px solid red;
+  border-bottom: 100px solid burlywood;
   border-left: 25px solid transparent;
   border-right: 25px solid transparent;
   height: 0;
@@ -137,9 +137,9 @@ body {
   width: 0px;
   height: 0px;
   border-right: 60px solid transparent;
-  border-top: 60px solid red;
-  border-left: 60px solid red;
-  border-bottom: 60px solid red;
+  border-top: 60px solid chartreuse;
+  border-left: 60px solid chartreuse;
+  border-bottom: 60px solid chartreuse;
   border-top-left-radius: 60px;
   border-top-right-radius: 60px;
   border-bottom-left-radius: 60px;
@@ -175,13 +175,21 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  background: red;
+  background:cadetblue;
   border: 12px solid #eee;
   border-radius: 100%;
   width: 8px;
   height: 8px;
   box-sizing: content-box;
 }
+
+.moon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  box-shadow: 15px 15px 0 0 orange;
+}
+
 
 #abc {
   width: 90px;

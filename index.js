@@ -38,7 +38,8 @@ Btn2.addEventListener("click", () => {
     "star-six",
     "trapezoid",
     "pacman",
-    "yin-yang"
+    "yin-yang",
+    "moon"
   ];
 
   let randomIndex = Math.floor(Math.random() * arr.length);
